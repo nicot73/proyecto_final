@@ -175,10 +175,10 @@ body {
         margin-bottom: 8px;
         padding: 8px 18px;
         border-radius: 3px;
-        width: 125px;
+        width: 140px;
     }
     aside ul li:hover {
-        border-left: solid 8px #9A9483;
+        border-left: solid 6px #9A9483;
         background-color: #FEA82F;
         color: #FF4301;
         cursor: pointer;
