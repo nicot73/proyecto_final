@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Hurricane&family=Montserrat:wght@100;400;500&family=Nunito+Sans:wght@300;400&family=Nunito:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- Titulo -->
+    <title>Red Bull Gaming</title>
+    <!-- Estilos CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icon/bullicon.ico" type="image/x-icon">
+    <link rel="icon" href="icon/bullicon.ico" type="image/x-icon">
+</head>
+<body id="grid-index" class="border">
+    <!-- Contenido del navegador -->
+    <!-- Encabezado -->
+    <header id="arriba" class="fondo-imagen">
+        <!-- Logotipo -->
+        <img src="img/logo_3.png" width="150" alt="Logotipo">
+
+        <!-- Titulo Principal -->
+        <h1 class="fluido">RED BULL GAMING</h1>
+
+        <a href="#abajo" class="atajo-abajo">Ir a pie de página</a>
+    </header>
+
+    <!-- Menu de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido Principal -->
+    <main>
+        <section id="carrusel" class="border">
+            <!-- Carrusel de Imagenes -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/img-carrusel-1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-carrusel-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-carrusel-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-carrusel-4.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-carrusel-5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+        </section>
+
+        <section id="destacados" class="border section-off">
+            <!-- Productos Destacados -->
+            <h2 class="texto-animado">Productos Destacados</h2>
+
+            <div class="centrar-div">
+                <a href="pages/productos.html" class="borde-boton"><img src="img/pc-armada.jpg" class="img-fluid" alt="Banner-pc-armada"></a>
+                <a href="pages/productos.html" class="borde-boton"><img src="img/arma-tu-pc.jpg" class="img-fluid" alt="Banner-arma-pc"></a>
+            </div>                
+        </section>
+
+        <section id="productos" class="border">
+            <!-- Más Productos -->
+            <h2 class="texto-animado">Encontrá lo que buscas</h2>
+            <div class="centrar-nav">
+                <nav>
+                    <ul class="menu-productos">
+                        <li><a href="pages/discos.html">Discos HDD/SSD</a></li>
+                        <li><a href="pages/placas-video.html">Placas de Video</a></li>
+                        <li><a href="pages/accesorios.html">Accesorios</a></li>
+                        <li><a href="pages/motherboards.html">Motherboards</a></li>
+                        <li><a href="pages/monitores.html">Monitores</a></li>
+                        <li><a href="pages/procesadores.html">Procesadores</a></li>
+                    </ul>
+                </nav>
+            </div>
+                        
+        </section>
+
+        <section id="informacion" class="border info">
+            <!-- Informacion -->
+            <div class="contactar">
+                <h3 class="texto-animado">Escribinos</h3>
+                <img src="img/wsp.png" width="25" alt="Logo-Wsp"><p>011-XXX-XXXX</p>
+                <img src="img/gmail.png" width="25" alt="Logo-gmail"><p>ejemplo@ejemplo.com</p>
+            </div>
+
+            <div class="visitar">
+                <h3 class="texto-animado">Visitanos</h3>
+                <a href="pages/visitanos.html"><img src="img/maps.png" width="45" alt="Logo-maps"></a>
+            </div>
+            
+            <div class="horario">
+                <h3 class="texto-animado">Horarios de Atención</h3>
+                <img src="img/calendario.png" width="25" alt="Logo-Calendario"><p>Lunes a Viernes de hora a hora</p>
+                <p>Sábados y feriados de hora a hora</p>
+            </div>                               
+        </section>
+    </main>
+    <!-- Pie de Pagina -->
+    <div class="container">
+        <footer id="abajo" class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="pages/productos.html" class="nav-link px-2">Productos</a></li>
+                <li class="nav-item"><a href="pages/nosotros.html" class="nav-link px-2">Nosotros</a></li>
+                <li class="nav-item"><a href="pages/contacto.html" class="nav-link px-2">Contacto</a></li>
+                <li class="nav-item"><a href="#arriba" class="nav-link px-2">Ir a Inicio</a></li>
+            </ul>
+
+            <p class="text-center">Ubicación: Ciudad, Provincia</p>
+            <p class="text-center">Dirección: Calle, Número</p>
+            <p class="text-center">Telefono: 011-XXX-XXXX</p>
+            <p class="text-center">E-mail: ejemplo@ejemplo.com</p>
+            <p class="text-center">Whatsapp: 011-XXX-XXXX</p>
+            <p class="text-center">Nuestras Redes:</p>
+            <div class="centrar-pie border-bottom">
+                <a href="https://www.facebook.com"><img src="img/fb.png" width="40" alt="Logo-Facebook"></a>
+                <a href="https://www.instagram.com"><img src="img/insta.png" width="40" alt="Logo-Instagram"></a>
+                <a href="https://web.whatsapp.com"><img src="img/wsp.png" width="40" alt="Logo-Wsp"></a>
+                <a href="https://www.youtube.com/"><img src="img/yt.png" width="40" alt="Logo-Youtube"></a>
+                
+            </div>
+            <p class="text-center">&copy; 2022 Desarrollado por Nic</p>
+        </footer>
+    </div>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

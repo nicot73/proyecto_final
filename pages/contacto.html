@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Hurricane&family=Montserrat:wght@100;400;500&family=Nunito+Sans:wght@300;400&family=Nunito:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+        <!-- Titulo -->
+        <title>Contacto</title>
+        <!-- Estilos CSS Bootstrap -->
+        <link rel="stylesheet" href="../css/bootstrap.css">  
+        <!-- Estilos -->
+        <link rel="stylesheet" href="../styles.css">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../icon/bullicon.ico" type="image/x-icon">
+        <link rel="icon" href="../icon/bullicon.ico" type="image/x-icon">
+    </head>
+    <body id="grid-contacto">
+        <!-- Contenido del navegador -->
+        <!-- Encabezado -->
+        <header id="arriba" class="fondo-imagen">
+            <!-- Logotipo -->
+            <img src="../img/logo_3.png" width="150" alt="Logotipo">
+            <!-- Titulo Principal -->
+            <h1 class="fluido">RED BULL GAMING</h1>
+
+            <a href="#abajo" class="atajo-abajo">Ir a pie de página</a>
+        </header>
+
+        <!-- Menu de Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Contenido Principal -->
+        <main id="mensaje" class="border contactar">
+            <h3 class="texto-animado">Formulario de contacto</h3>
+            <!-- Cajas -->
+            <form action="">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="name" name="nombre"><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email"><br>
+                <label for="comentarios">Comentarios</label><br>
+                <textarea  width="300px" name="comentarios" cols="50" rows="10"></textarea><br>
+                <!-- Botones-->
+                <input type="reset" value="Limpiar formulario">
+                <input type="submit" value="Enviar formulario">
+            </form>
+        </main>
+        <!-- Pie de Pagina -->
+        <footer id="abajo" class="py-3 my-4">
+            <div class="container">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
+                    <li class="nav-item"><a href="../pages/productos.html" class="nav-link px-2">Productos</a></li>
+                    <li class="nav-item"><a href="../pages/nosotros.html" class="nav-link px-2">Nosotros</a></li>
+                    <li class="nav-item"><a href="../pages/contacto.html" class="nav-link px-2">Contacto</a></li>
+                    <li class="nav-item"><a href="#arriba" class="nav-link px-2">Ir a Inicio</a></li>
+                </ul>
+    
+                <p class="text-center">Ubicación: Ciudad, Provincia</p>
+                <p class="text-center">Dirección: Calle, Número</p>
+                <p class="text-center">Telefono: 011-XXX-XXXX</p>
+                <p class="text-center">E-mail: ejemplo@ejemplo.com</p>
+                <p class="text-center">Whatsapp: 011-XXX-XXXX</p>
+                <p class="text-center">Nuestras Redes:</p>
+                <div class="centrar-pie border-bottom">
+                    <a href="https://www.facebook.com"><img src="../img/fb.png" width="40" alt="Logo-Facebook"></a>
+                    <a href="https://www.instagram.com"><img src="../img/insta.png" width="40" alt="Logo-Instagram"></a>
+                    <a href="https://web.whatsapp.com"><img src="../img/wsp.png" width="40" alt="Logo-Wsp"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/yt.png" width="40" alt="Logo-Youtube"></a>
+                    
+                </div>
+                <p class="text-center">&copy; 2022 Desarrollado por Nic</p>
+            </div>  
+        </footer>
+        <script src="../js/bootstrap.js"></script>
+    </body>
+</html>

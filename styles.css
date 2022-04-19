@@ -1,0 +1,996 @@
+/* Estilos Generales */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.border {
+    border: solid 1px #9A9483;
+}
+/* Estilos Body */
+body {
+    background-image: linear-gradient(#E45826 25%, #FF6701 45%, #FF8303 65%, #FA7D09 85%, #FF8C32 100%);
+    width: 100%;
+    height: 100%;
+}
+/* Fondo Encabezado */
+.fondo-imagen {
+    background-image: url("img/celdas-rojo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Imagenes Responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+/* FONTS */
+@font-face {
+    font-family: 'FullPack2025';
+    src: url("fonts/full-pack-2025.ttf");
+}
+@font-face {
+    font-family: 'AmazingViews';
+    src: url("fonts/Amazing-Views-Italic.ttf");
+}
+/* CSS - Texto con Degradado */
+.fluido {
+    animation: fluido 4s ease-in-out infinite;
+    background: linear-gradient(-45deg, #7e0c0c, #CD1818, #E45826, #FF6701, #FA7D09, #FF8C32);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    }
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+/* CSS - Texto Animado */
+.texto-animado {
+    animation-name: texto;
+    animation-duration: 2s;
+}
+@keyframes texto {
+    from {
+        transform: translate(-400px);
+    }
+    to {
+        transform: 0;
+    }
+}
+/* Mobile First */
+/* Smartphone */
+@media (max-width: 480px){
+    header, nav, #destacados, #productos, #informacion, #contactar, #visitar, #horario {
+        padding: 20px 20px;
+    }
+    /* Encabezado */
+    header a {
+        text-decoration: none;
+        color: #FA7D09;
+    }
+    header img {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 2rem;
+        font-family: 'FullPack2025';
+        color: #FA7D09;
+        text-align: center;
+        font-weight: bolder;
+        margin: 2px;
+        padding: 15px;
+    }
+    /* Menu */
+    ul {
+        list-style-type: none;
+    }
+    nav {
+        background-image: linear-gradient(to right, #1F1C2C, #434343);
+        padding: 8px;
+        border-radius: 3px;
+        align-content: center;
+    }
+    a {
+        text-decoration: none;
+        color: #1B1A17;
+    }
+    ul li {
+        margin-top: 6px;
+    }
+    ul li:hover {
+        border-radius: 3px;
+        border-left: solid 6px #9A9483;
+        background-color: #FEA82F;
+        cursor: pointer;
+    }
+    /* Cuerpo */
+    section h2 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    section h3 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1rem;
+    }
+    section ul li {
+        background-color: #FF4301;
+        max-width: 230px;
+        margin-bottom: 8px;
+        padding: 10px 25px;
+        border-radius: 3px;
+        align-self: center;
+    }
+    section ul li:hover {
+        border-left: solid 6px #9A9483;
+        background-color: #FEA82F;
+        cursor: pointer;
+    }
+    /* Info */
+    .contactar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .visitar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .horario {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    /* Pie Pag */
+    footer img{
+        padding-right: 8px;
+        padding-left: 8px;
+        padding-bottom: 12px;
+    }
+    .centrar-pie {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    footer p {
+        font-size: 0.75rem;
+    }
+    /* Display Off */
+    .section-off {
+        display: none;
+    }
+    /* Pag Productos */
+    aside ul li {
+        background-color: #FF4301;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        padding: 8px 18px;
+        border-radius: 3px;
+        width: 125px;
+    }
+    aside ul li:hover {
+        border-left: solid 8px #9A9483;
+        background-color: #FEA82F;
+        color: #FF4301;
+        cursor: pointer;
+    }
+    aside h2 {
+        font-family: 'AmazingViews';
+        font-size: 1.5rem;
+        padding: 10px;
+        text-align: center;
+    }
+    section article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    article div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    article h5, article p {
+        color: #1B1A17;
+    }
+    .articulo {
+        background-image: url("img/poligonos-neon.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        width: 99%;
+        color: white;
+    }
+    /* Pag Nosotros */
+    main h2 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    main h3 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    /* Pag Visitanos */
+    iframe {
+        width: 300px;
+        height: 450px;
+    }
+
+    /* Grid Areas */
+    /* Index */
+    #grid-index {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna 7 Filas */
+        "encabezado"
+        "menu"
+        "carrusel"
+        "destacados"
+        "productos"
+        "informacion"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Productos */
+    #grid-productos {
+        display: grid;
+        grid-template-areas: 
+        /* 2 Columna 4 Filas */
+        "encabezado encabezado"
+        "menu menu"
+        "menu-lat stock"
+        "pie pie";
+        grid-template-columns: 40% 60%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Nosotros */
+    #grid-nosotros {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "nosotros"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Contacto */
+    #grid-contacto {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "mensaje"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Visitanos */
+    #grid-visitanos {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "mapa"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    header {
+        grid-area: encabezado;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+    }
+    nav {
+        grid-area: menu;
+    }
+    #carrusel {
+        grid-area: carrusel;
+    }
+    #destacados {
+        grid-area: destacados;
+    }
+    #productos {
+        grid-area: productos;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    #informacion {
+        grid-area: informacion;
+    }
+    footer {
+        grid-area: pie;
+    }
+    /* Pag Productos */
+    #menu-lat {
+        grid-area: menu-lat;
+    }
+    #stock {
+        grid-area: stock;
+    }
+    /* Pag Nosotros */
+    #nosotros {
+        grid-area: nosotros;
+    }
+    /* Pag Contacto */
+    #mensaje {
+        grid-area: mensaje;
+    }
+    /* Pag Visitanos */
+    #mapa {
+        grid-area: mapa;
+    }
+}
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    #destacados, #productos, #informacion, #contactar, #visitar, #horario {
+        padding: 30px 10px;
+    }
+    /* Encabezado */
+    header a {
+        text-decoration: none;
+        color: #FA7D09;
+    }
+    header img {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-family: 'FullPack2025';
+        text-align: center;
+        font-weight: bolder;
+        color: #FA7D09;
+        margin: 2px;
+        padding: 15px;
+    }
+    .atajo-abajo {
+        display: flex;
+        flex-flow: column nowrap;
+        align-self: end;
+    }
+    /* Menu */
+    ul {
+        list-style-type: none;
+    }
+    nav {
+        background-image: linear-gradient(to right, #1F1C2C, #434343);
+        padding: 8px;
+        border-radius: 3px;
+        align-content: center;
+    }
+    a {
+        text-decoration: none;
+        color: #1B1A17;
+    }
+    ul li {
+        margin-top: 6px;
+    }
+    ul li:hover {
+        border-radius: 3px;
+        border-left: solid 6px #9A9483;
+        background-color: #FEA82F;
+        cursor: pointer;
+    }
+    /* Cuerpo */
+    section h2 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 6px;
+    }
+    section h3 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 3px;
+    }
+    .centrar-div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around; 
+    }
+    .borde-boton {
+        background-image: url("img/fondo-neon-rectangulos.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /* Menu Productos */
+    .menu-productos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    section ul li {
+        background-color: #FF4301;
+        max-width: 230px;
+        margin-bottom: 8px;
+        padding: 10px 25px;
+        border-radius: 3px;
+        align-self: center;
+    }
+    section ul li:hover {
+        border-left: solid 6px #9A9483;
+        background-color: #FEA82F;
+        cursor: pointer;
+    }
+    section nav {
+            background-color: #4A3F35;
+            display: flex;
+            flex-flow: row wrap;
+            border-radius: 3px;
+            justify-content: space-around;
+    }
+    /* Info */
+    .info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .contactar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .visitar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    .horario {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    /* Pie Pag */
+    footer img{
+        padding-right: 8px;
+        padding-left: 8px;
+        padding-bottom: 12px;
+    }
+    .centrar-pie {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    /* Pag Productos */
+    aside ul li {
+        background-color: #FF4301;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        padding: 8px 20px;
+        border-radius: 3px;
+        width: 150px;
+    }
+    aside ul li:hover {
+        border-left: solid 8px #9A9483;
+        background-color: #FEA82F;
+        color: #FF4301;
+        cursor: pointer;
+    }
+    aside h2 {
+        font-family: 'AmazingViews';
+        font-size: 1.5rem;
+        padding: 10px;
+        text-align: center;
+    }
+    section article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    article div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    article h5, article p {
+        color: #1B1A17;
+    }
+    .articulo {
+        background-image: url("img/poligonos-neon.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        width: 99%;
+        color: white;
+    }
+    .centrar-aside {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    /* Pag Nosotros */
+    main h2 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 2rem;
+    }
+    main h3 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    /* Grid Areas */
+    #grid-index {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna 7 Filas */
+        "encabezado"
+        "menu"
+        "carrusel"
+        "destacados"
+        "productos"
+        "informacion"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Productos */
+    #grid-productos {
+        display: grid;
+        grid-template-areas: 
+        /* 2 Columna 4 Filas */
+        "encabezado encabezado"
+        "menu menu"
+        "menu-lat stock"
+        "pie pie";
+        grid-template-columns: 34% 66%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Nosotros */
+    #grid-nosotros {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "nosotros"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Contacto */
+    #grid-contacto {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "mensaje"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Visitanos */
+    #grid-visitanos {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "mapa"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    header {
+        grid-area: encabezado;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+    }
+    nav {
+        grid-area: menu;
+    }
+    #carrusel {
+        grid-area: carrusel;
+    }
+    #destacados {
+        grid-area: destacados;
+    }
+    #productos {
+        grid-area: productos;
+    }
+    #informacion {
+        grid-area: informacion;
+    }
+    footer {
+        grid-area: pie;
+    }
+    /* Pag Productos */
+    #menu-lat {
+        grid-area: menu-lat;
+    }
+    #stock {
+        grid-area: stock;
+    }
+    /* Pag Nosotros */
+    #nosotros {
+        grid-area: nosotros;
+    }
+    /* Pag Contacto */
+    #mensaje {
+        grid-area: mensaje;
+    }
+    /* Pag Visitanos */
+    #mapa {
+        grid-area: mapa;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #destacados, #productos, #informacion, #contactar, #visitar, #horario {
+        padding: 30px 10px;
+    }
+    /* Encabezado */
+    header a {
+        text-decoration: none;
+        color: #FA7D09;
+    }
+    header img {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-family: 'FullPack2025';
+        text-align: center;
+        font-weight: bolder;
+        color: #FA7D09;
+        margin: 2px;
+        padding: 15px;
+    }
+    .atajo-abajo {
+        display: flex;
+        flex-flow: column nowrap;
+        align-self: end;
+    }
+    /* Menu */
+    ul {
+        list-style-type: none;
+    }
+    nav {
+        background-image: linear-gradient(to right, #1F1C2C, #434343);
+        padding: 8px;
+        border-radius: 3px;
+        align-content: center;
+    }
+    a {
+        text-decoration: none;
+        color: #1B1A17;
+    }
+    ul li {
+        margin-left: 8px;
+        padding: 2px 8px;
+    }
+    ul li:hover {
+        border-radius: 3px;
+        border-left: solid 8px #9A9483;
+        background-color: #FEA82F;
+        cursor: pointer;
+    }
+    /* Cuerpo */
+     section h2 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 2rem;
+        padding: 8px;
+    }
+    section h3 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 4px;
+    }
+    .centrar-div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly; 
+    }
+    .borde-boton {
+        background-image: url("img/fondo-neon-rectangulos.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /* Menu Productos */
+    .menu-productos {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .centrar-nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    section ul li {
+        background-color: #FF4301;
+        margin-left: 8px;
+        padding: 10px 25px;
+        border-radius: 3px;
+        align-self: center;
+    }
+    section ul li:hover {
+        border-left: solid 8px #9A9483;
+        background-color: #FEA82F;
+        cursor: pointer;
+    }
+    section nav {
+        max-width: 1400px;
+        background-color: #4A3F35;
+        display: flex;
+        flex-flow: row wrap;
+        border-radius: 3px;
+        justify-content: space-around;
+    }
+    /* Info */
+    .info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .contactar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .visitar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    .horario {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    /* Pie Pag */
+    footer img{
+        padding-right: 8px;
+        padding-left: 8px;
+        padding-bottom: 12px;
+    }
+    .centrar-pie {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    /* Pag Productos */
+    aside ul li {
+        background-color: #FF4301;
+        margin-left: 8px;
+        margin-bottom: 8px;
+        padding: 8px 20px;
+        border-radius: 3px;
+        width: 150px;
+    }
+    aside ul li:hover {
+        border-left: solid 6px #9A9483;
+        background-color: #FEA82F;
+        color: #FF4301;
+        cursor: pointer;
+    }
+    aside h2 {
+        font-family: 'AmazingViews';
+        font-size: 1.8rem;
+        padding: 10px;
+        text-align: center;
+    }
+    section article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    article div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    article h5, article p {
+        color: #1B1A17;
+    }
+    .articulo {
+        background-image: url("img/poligonos-neon.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        width: 99%;
+        color: white;
+    }
+    .centrar-aside {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    /* Pag Nosotros */
+    main h2 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    main h3 {
+        font-family: 'AmazingViews';
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* Grid Areas */
+    #grid-index {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna 7 Filas */
+        "encabezado"
+        "menu"
+        "carrusel"
+        "destacados"
+        "productos"
+        "informacion"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Productos */
+    #grid-productos {
+        display: grid;
+        grid-template-areas: 
+        /* 2 Columna 4 Filas */
+        "encabezado encabezado"
+        "menu menu"
+        "menu-lat stock"
+        "pie pie";
+        grid-template-columns: 20% auto;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Nosotros */
+    #grid-nosotros {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "nosotros"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Contacto */
+    #grid-contacto {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "mensaje"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /* Visitanos */
+    #grid-visitanos {
+        display: grid;
+        grid-template-areas: 
+        /* 1 Columna, 4 Filas */
+        "encabezado"
+        "menu"
+        "mapa"
+        "pie";
+        grid-template-columns: 100%;
+        /* Espacios */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    header {
+        grid-area: encabezado;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+    }
+    nav {
+        grid-area: menu;
+    }
+    #carrusel {
+        grid-area: carrusel;
+    }
+    #destacados {
+        grid-area: destacados;
+    }
+    #productos {
+        grid-area: productos;
+    }
+    #informacion {
+        grid-area: informacion;
+    }
+    footer {
+        grid-area: pie;
+    }
+    /* Pag Productos */
+    #menu-lat {
+        grid-area: menu-lat;
+    }
+    #stock {
+        grid-area: stock;
+    }
+    /* Pag Nosotros */
+    #nosotros {
+        grid-area: nosotros;
+    }
+    /* Pag Contacto */
+    #mensaje {
+        grid-area: mensaje;
+    }
+    /* Pag Visitanos */
+    #mapa {
+        grid-area: mapa;
+    }
+}
